@@ -48,3 +48,14 @@
       }
     });
   });
+
+      window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const triggerPoint = window.innerHeight * 0.5; 
+
+    if (window.scrollY > triggerPoint) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });

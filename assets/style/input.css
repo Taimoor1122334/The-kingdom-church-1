@@ -143,3 +143,29 @@ h1,h2,h4,h5,h6,.navlink,.btn{
 .nav-link.active::before {
   width: 100%;
 }
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  transition: all 1s ease-in-out;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%); 
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
