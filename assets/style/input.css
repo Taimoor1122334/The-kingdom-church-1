@@ -3,6 +3,8 @@
 body {
     margin: 0;
     padding: 0;
+      font-family: 'Proxima Nova', Arial, sans-serif;
+
 }
 
 @layer components {
@@ -14,49 +16,49 @@ body {
     }
 
     h1 {
-        @apply lg:text-[75px] lg:leading-[100px] font-semibold
+        @apply lg:text-[75px] lg:leading-[100px] 
                md:text-[56px] md:leading-[75px]
                text-[38px] leading-[50px];
     }
 
     h2 {
-        @apply lg:text-[56px] lg:leading-[75px] font-semibold
+        @apply lg:text-[56px] lg:leading-[75px] 
                md:text-[45px] md:leading-[60px]
                text-[30px] leading-[40px];
     }
 
     h3 {
-        @apply lg:text-[29px] lg:leading-[38px] font-bold
+        @apply lg:text-[29px] lg:leading-[38px] 
                md:text-[24px] md:leading-[32px]
                text-[20px] leading-[28px];
     }
 
     h4 {
-        @apply lg:text-[26px] lg:leading-[38px] font-semibold
+        @apply lg:text-[26px] lg:leading-[38px] 
                md:text-[22px] md:leading-[32px]
                text-[18px] leading-[28px];
     }
 
     h5 {
-        @apply lg:text-[23px] lg:leading-[31px] uppercase lg:tracking-[8px] font-semibold
+        @apply lg:text-[23px] lg:leading-[31px] uppercase lg:tracking-[8px] 
                md:text-[18px] md:leading-[26px] md:tracking-[6px]
                text-[14px] leading-[22px] tracking-[4px];
     }
 
     h6 {
-        @apply lg:text-[18px] lg:leading-[25px] uppercase lg:tracking-[5px] font-semibold
+        @apply lg:text-[18px] lg:leading-[25px] uppercase lg:tracking-[5px] 
                md:text-[16px] md:leading-[22px] md:tracking-[4px]
                text-[13px] leading-[20px] tracking-[3px];
     }
 
     .nav-link {
-        @apply hover:text-[#149EC9] lg:text-lg transition-colors font-semibold
+        @apply hover:text-[#149EC9] lg:text-lg transition-colors 
                md:text-base
                text-sm;
     }
 
     .btn {
-        @apply bg-[#149EC9] hover:bg-[#149ed9ce] font-semibold transition-colors inline-block lg:py-2 lg:px-9 lg:text-[19px] text-white rounded-full
+        @apply bg-[#149EC9] hover:bg-[#149ed9ce] transition-colors inline-block lg:py-2 lg:px-9 lg:text-[19px] text-white rounded-full
                md:text-[17px] md:px-7 md:py-2
                text-[15px] px-6 py-1.5;
     }
@@ -64,4 +66,35 @@ body {
 }
 html{
     scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/ProximaNova.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/ProximaNova\ Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/ProximaNova\ Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,h2,h4,h5,h6,.navlink,.btn{
+    font-weight: 500;
+}
+h3{
+    font-weight: 700;
 }
