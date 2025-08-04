@@ -86,11 +86,28 @@ html{
 
 @font-face {
   font-family: 'Proxima Nova';
+  src: url('/assets/fonts/ProximaNova\ SemBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
   src: url('/assets/fonts/ProximaNova\ Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/ProximaNova\ ExBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 h1,h2,h4,h5,h6,.navlink,.btn{
     font-weight: 500;
