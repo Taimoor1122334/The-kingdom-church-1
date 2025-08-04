@@ -9,19 +9,20 @@
 </head>
 <body>
 
-    <header >
+    <header class="w-full absolute top-0 left-0 z-50" >
         <div class="max-w-[1320px] mx-auto  py-2">
-            <div class="flex  items-center justify-around">
+            <div class="flex  items-center justify-center gap-20">
                 <div class="max-w-[212px]">
              <img src="assets/images/kc logo.svg">
                 </div>
                 
                 <!-- Desktop Navigation -->
-                <nav class="hidden md:flex  w-2xl justify-around">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About TKC</a>
-                    <a href="#give" class="nav-link">Give</a>
-                    <a href="#contact" class="nav-link">Contact</a>
+                <nav class=" nav hidden md:flex  w-2xl justify-around">
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#about" class="nav-link">About TKC</a>
+  <a href="#give" class="nav-link">Give</a>
+  <a href="#contact" class="nav-link">Contact</a>
+
                 </nav>
 
                       <div class="md:hidden">
@@ -37,7 +38,7 @@
             </div>
              <div id="mobileMenu" class="md:hidden hidden px-4 py-4 border-t">
       <nav class="flex flex-col space-y-4 text-sm uppercase">
-        <a href="#" class="nav-link mobile-link">Home</a>
+        <a href="#home" class="nav-link mobile-link">Home</a>
                     <a href="#about" class="nav-link mobile-link">About TKC</a>
                     <a href="#give" class="nav-link mobile-link">Give</a>
                     <a href="#contact" class="nav-link mobile-link">Contact</a>
@@ -49,21 +50,18 @@
 
     <main>
         <!---Hero section-->
-      <section class="hero-section">
-  <div class="relative h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] overflow-hidden">
-    <img src="assets/images/hero-image.png" class="absolute inset-0 w-full h-full object-cover z-0" />
-
+      <section id="home" class="hero-section bg-[url('/assets/images/hero-image.png')] bg-cover" >
+  <div class="pt-[100px] relative h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] overflow-hidden">
     <div class="max-w-[1320px] px-4 sm:px-6 md:px-10 mx-auto h-full z-10 relative">
-      <div class="flex items-center lg:justify-start justify-center h-full">
-        <div class="[&_span]:font-bold text-white text-center lg:text-left">
-          <h6 >The Kingdom Church</h6>
+      <div class="flex items-center  justify-center h-full">
+        <div class="[&_span]:font-bold text-white text-center">
+          <h6 >We Are Kingdom.</h6>
           <h1 >
-            We Are <span>Kingdom.</span>
+            Welcome To The Kingdom Life
           </h1>
           <h5>Live | grow | become</h5>
-          <div class="mt-6 space-x-3 sm:space-x-5">
-            <a href="#about" class="btn">About TKC</a>
-            <a href="#contact" class="btn tracking-[3px] sm:tracking-[5px]">Join Us</a>
+          <div class="mt-6 [&_a]:text-black [&_a]:bg-white [&_a]:hover:bg-[#96671B] [&_a]:tracking-[3px] sm:[&_a]:tracking-[5px] ">
+            <a href="#about" class="btn">Learn more</a>
           </div>
         </div>
       </div>
@@ -74,21 +72,22 @@
         <!---Hero section-->
 
          <!---About section-->
-       <section>
-  <div id="about" class="max-w-[1320px] px-4 md:px-8 lg:px-10 mx-auto flex flex-col lg:flex-row items-center py-10 md:py-20 lg:py-30 gap-10">
+       <section id="about">
+  <div  class="max-w-[1320px] px-4 md:px-8 lg:px-10 mx-auto flex flex-col lg:flex-row items-center py-10 md:py-20 lg:py-30 gap-10">
     
     <!-- Image -->
     <div class="w-full lg:w-1/2">
-      <img src="assets/images/abou-kc.png" alt="About-kc" class="w-full h-auto object-cover" />
+      <img src="assets/images/about-kc.png" alt="About-kc" class="w-full h-auto object-cover" />
     </div>
 
     <!-- Text -->
-    <div class="w-full lg:w-1/2 [&_span]:font-bold [&_span]:text-[#149EC9]">
-      <h1 class="text-[40px] md:text-[60px] lg:text-[75px] leading-[50px] md:leading-[75px] lg:leading-[100px] font-semibold mb-4">
-        About <span>TKC</span>
-      </h1>
+    <div class="w-full lg:w-1/2 pl-5 [&_span]:font-bold  [&_span]:text-[#96671B]">
+      <h2 class=" mb-10">
+        A <span>Safe Community</span> <br>
+For All of God’s People
+      </h2>
       <p class="text-[18px] md:text-[22px] lg:text-[26px] leading-[28px] md:leading-[34px] lg:leading-[37px] font-light">
-        The Kingdom Church is a Spirit-filled community where people from all walks of life can encounter God, grow in faith, and walk in purpose. Rooted in the message of the Gospel and empowered by the Holy Spirit, we exist to advance God’s Kingdom on earth. Whether you’re exploring faith or looking to go deeper, there’s a place for you here—a place to live, grow, and become.
+       At The Kingdom Church, we are more than a congregation—we’re family. This is a house where God’s love runs deep, His truth is preached with power, and every soul is seen. We believe church should be a safe haven—a place where the broken are embraced, the weary are refreshed, and everybody has a seat at the table. No matter your past, your pain, or your process, you belong here. This is holy ground, a sanctuary for healing, growth, and becoming all God has called you to be.
       </p>
     </div>
 
@@ -101,7 +100,7 @@
 <section >
   <div class="max-w-[1320px] px-5 md:px-10 mx-auto pb-10 md:pb-15 space-y-8 md:space-y-10">
 
-    <div class="[&_span]:font-bold [&_span]:text-[#149EC9] ">
+    <div class="[&_span]:font-bold [&_span]:text-[#96671B] ">
       <h2 >
         Who We <span>Are</span>
       </h2>
@@ -110,7 +109,7 @@
       </p>
     </div>
 
-    <div class="[&_span]:font-bold [&_span]:text-[#149EC9] ">
+    <div class="[&_span]:font-bold [&_span]:text-[#96671B] ">
       <h2 >
         What We <span>Believe</span>
       </h2>
@@ -121,26 +120,48 @@
 
   </div>
 </section>
+    <!-- Who We Are & Believe Section -->
+
+    <!---our vision and mission--->
+    <section>
+
+     <div class="max-w-[1320px] px-5 md:px-10 mx-auto pb-10 md:pb-15 space-y-8 md:space-y-10">
+
+    <div class="[&_span]:font-bold [&_span]:text-[#96671B] ">
+      <h2 >
+        Our <span>Vision</span> and <span>Mission</span>
+      </h2>
+      <div class="my-10" >   
+        <p class=" font-bold">Our Vision</p>
+         <p>To see lives transformed, communities empowered, and the Kingdom of God made visible on earth—one soul at a time.</p>
+    </div>
+      <div class="my-10" >   
+        <p class=" font-bold">Our Mission</p>
+         <p>Our mission is to equip believers, reach the lost, and expand God’s Kingdom through Spirit-led worship, sound doctrine, and radical love. We are called to be a voice in this generation, standing on truth, walking in power, and serving with compassion—until earth looks like heaven.
+</p>
+    </div>
+
+  </div>
+
+    </section>
 
       <!-- Leaders -->
-<section>
-  <div class="max-w-[1320px]  mx-auto pt-10 lg:pt-30 flex flex-col lg:flex-row items-center gap-10">
+<section class="bg-[#EDEDED]">
+  <div class="max-w-[1320px]  mx-auto pt-10 lg:pt-30 flex flex-col lg:flex-row-reverse items-center ">
     
     <!-- Text Content -->
-    <div class="w-full lg:pl-10 pl-5 [&_h2]:border-b-4 [&_h2]:border-[#149EC9] [&_h2]:pb-4  lg:max-w-[40%] [&_p]:my-6 lg:[&_p]:my-10 lg:mb-10 lg:pr-5 ">
-      <h4>Meet our leaders</h4>
-      <h2>Pastor Joseph &amp; Lady Lina Carr</h2>
+    <div class="w-full lg:px-10 pl-5  [&_h2]:pb-4  lg:max-w-[50%] [&_p]:my-6 lg:[&_p]:my-10 lg:mb-10 ">
+      <h4>Meet our lead pastor</h4>
+      <h2>Pastor Joseph Carr Jr.</h2>
+      <div class="border-b-4 border-[#96671B] max-w-[300px] h-2"></div>
       <p>
-        Hi, Pastor Joseph &amp; Lady Lina Carr, we are honored you’ve taken a moment to connect with us.
-        At The Kingdom Church, our heart is to see lives transformed by the power of God’s love and truth.
-        Whether you’re exploring faith, returning to church, or looking for a place to grow and serve,
-        you are welcome here to live, grow, and become.
+        Pastor Joseph Carr, Jr. is a Spirit‑empowered leader with a heart for authentic worship, transformative teaching, and Kingdom advancement. Raised in a home of faith, Pastor Joe grew up steeped in Pentecostal tradition and has faithfully shepherded The Kingdom Church since its founding. Passionate about community impact, he bridges timeless doctrine with relevant ministry, empowering people to walk in purpose and faith. Known for his warmth, integrity, and prophetic insight, Pastor Joe leads with unwavering conviction: to see lives liberated, relationships restored, and the Kingdom of God unfold in power.
       </p>
     </div>
 
     <!-- Image Content -->
-    <div class="w-full lg:max-w-[60%] pl-0 lg:pl-10">
-      <img src="assets/images/Teams-leader.png" alt="Leaders" class="w-full h-auto object-contain">
+    <div class="w-full lg:max-w-[50%] ">
+      <img src="assets/images/Teams-leader.png" alt="Leaders" >
     </div>
 
   </div>
@@ -149,25 +170,22 @@
 
 
         <!-- Vision of TKC -->
-<section class="bg-[#EDEDED]" id="give">
+<section  id="give">
   <div class="max-w-[1320px] px-6 lg:px-10 mx-auto py-20">
     <!-- Heading & Paragraph -->
     <div class="[&_span]:font-bold [&_span]:text-[#149EC9] lg:[&_h2]:text-center  [&_p]:max-w-6xl [&_p]:mx-auto [&_p]:mt-6">
-      <h2>Sow Into The Vision of <span>TKC</span></h2>
+      <h2>Partner With Us In Giving</h2>
       <p>
-        Partnering with The Kingdom Church through giving is more than charity—it’s Kingdom investment.
-        Your generosity helps us reach souls, serve communities, disciple believers, and create spaces
-        where God’s presence transforms lives. Every gift fuels ministry, empowers outreach, and strengthens
-        the mission to see God’s will done on earth as it is in heaven.
+        Partnering with The Kingdom Church through giving is more than charity—it’s Kingdom investment. Your generosity helps us reach souls, serve communities, disciple believers, and create spaces where God’s presence transforms lives. Every gift fuels ministry, empowers outreach, and strengthens the mission to see God’s will done on earth as it is in heaven.
       </p>
     </div>
 
     <!-- Donation Cards -->
-    <div class="pt-14 flex flex-wrap gap-11 justify-center ">
+    <div class="pt-14 flex flex-wrap gap-10 justify-center ">
       <!-- PayPal -->
       <div class="max-w-[384px] w-full bg-white  shadow-md">
         <img src="assets/images/paypal.png" alt="Donate via PayPal" >
-        <div class="px-8 py-10 flex items-center justify-between gap-2 lg:gap-4">
+        <div class="px-8 py-10 flex items-center justify-between gap-2 lg:gap-4 [&_a]:bg-[#96671B] [&_a]:hover:bg-[#96671bd5]">
           <h3>PayPal</h3>
           <a href="#" class="btn">Donate Now</a>
         </div>
@@ -176,7 +194,7 @@
       <!-- CashApp -->
       <div class="max-w-[384px] w-full bg-white  shadow-md">
         <img src="assets/images/cashapp.png" alt="Donate via CashApp" >
-        <div class="px-8 py-10 flex items-center justify-between gap-2 lg:gap-4">
+        <div class="px-8 py-10 flex items-center justify-between [&_a]:bg-[#96671B] [&_a]:hover:bg-[#96671bd5] gap-2 lg:gap-4">
           <h3>CashApp</h3>
           <a href="#" class="btn">Donate Now</a>
         </div>
@@ -185,7 +203,7 @@
       <!-- Givelify -->
       <div class="max-w-[384px] w-full bg-white  shadow-md">
         <img src="assets/images/givelify.png" alt="Donate via Givelify" >
-        <div class="px-8 py-10 flex items-center justify-between gap-2 lg:gap-4">
+        <div class="px-8 py-10 flex items-center justify-between gap-2 lg:gap-4 [&_a]:bg-[#96671B] [&_a]:hover:bg-[#96671bd5]">
           <h3>Givelify</h3>
           <a href="#" class="btn">Donate Now</a>
         </div>
@@ -195,7 +213,7 @@
 </section>
 <!-- End Vision of TKC -->
 <!-- Contact Section -->
-<section class="bg-[#149EC9]" id="contact">
+<section class="bg-[#96671B]" id="contact">
   <div class="max-w-[1320px] px-6 lg:px-10 mx-auto py-16 lg:py-30 flex flex-col lg:flex-row items-center justify-between gap-10">
 
     <!-- Text Section -->
@@ -204,22 +222,22 @@
         The Kingdom Church
       </h1>
 
-      <div class="contact text-[20px]  lg:text-[30px] leading-[1.4]">
+      <div class="contact text-[20px] [&_p]:font-medium lg:text-[30px] leading-[1.4]">
         <p>123 Any Street</p>
         <p>Any City, USA 12345</p>
       </div>
 
-      <div class="mt-5 font-medium text-[20px] lg:text-[30px] leading-[1.4]">
+      <div class="mt-5  [&_p]:font-medium text-[20px] lg:text-[30px] leading-[1.4]">
         <p>Phone: 1.234.5678</p>
         <p>Email: info@tkc.org</p>
       </div>
 
-      <div class="mt-5 font-medium text-[20px] lg:text-[30px] leading-[1.4]">
+      <div class="mt-5  [&_p]:font-medium text-[20px] lg:text-[30px] leading-[1.4]">
         <p>Sunday Worship</p>
         <p>8:00am & 10:00am</p>
       </div>
 
-      <div class="mt-5 font-medium text-[20px] lg:text-[30px] leading-[1.4]">
+      <div class="mt-5 [&_p]:font-medium  text-[20px] lg:text-[30px] leading-[1.4]">
         <p>Tuesday Bible Study</p>
         <p>7:30pm</p>
       </div>
@@ -239,14 +257,16 @@
         <!----footer---->
 <footer>
   <div class="max-w-[1320px] px-6 lg:px-10 mx-auto py-10">
-    <div class="flex flex-col md:flex-row gap-10 ">
+    <div class="flex flex-col md:flex-row ">
       <!-- Logo -->
-      <div class="md:w-1/3 max-w-[303px]">
-        <img src="assets/images/kc logo.svg" alt="logo" class="w-full h-auto">
+       <div class="w-full lg:w-[30%]">
+      <div class=" max-w-[303px]">
+        <img src="assets/images/Footer-logo.svg" alt="logo" class="w-full h-auto">
+      </div>
       </div>
 
       <!-- Address -->
-      <div class="md:w-1/4 text-[18px] sm:text-[20px] md:text-[23px] leading-[28px] md:leading-[31px] font-semibold">
+      <div class="w-full pl-5 lg:w-[25%] text-[18px] sm:text-[20px] md:text-[23px] leading-[28px] md:leading-[31px] font-semibold">
         <span class="font-extrabold block mb-2">The Kingdom Church</span>
         123 Any Street<br>
         Any City, USA 12345<br>
@@ -254,13 +274,23 @@
         Email: info@tkc.org
       </div>
 
+       <div class="w-full lg:w-[20%] text-[18px]  sm:text-[20px] md:text-[23px] [&_a]:hover:text-[#96671B]  [&_a]:underline leading-[28px] md:leading-[31px] font-semibold flex flex-col">
+        <span class="font-extrabold block mb-2">Quick Links</span>
+      
+  <a href="#home" >Home</a>
+  <a href="#about" >About TKC</a>
+  <a href="#give" >Give</a>
+  <a href="#contact" >Contact</a>
+
+                
+      </div>
+
       <!-- Service Times -->
-      <div class="md:w-1/3 text-[18px] sm:text-[20px] md:text-[23px] leading-[28px] md:leading-[31px] font-semibold">
+      <div class="w-full lg:w-[25%] text-[18px] sm:text-[20px] md:text-[23px] leading-[28px] md:leading-[31px] font-semibold">
         <span class="font-extrabold block mb-2">Service Times</span>
         Sunday Worship<br>
         8:00am & 10:00am<br><br>
-        Tuesday Bible Study<br>
-        7:30 pm
+        Tuesday Bible Study 7:30 pm
       </div>
     </div>
 

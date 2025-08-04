@@ -52,13 +52,13 @@ body {
     }
 
     .nav-link {
-        @apply hover:text-[#149EC9] lg:text-lg transition-colors 
+        @apply  text-white lg:text-lg transition-colors uppercase 
                md:text-base
                text-sm;
     }
 
     .btn {
-        @apply bg-[#149EC9] hover:bg-[#149ed9ce] transition-colors inline-block lg:py-2 lg:px-9 lg:text-[19px] text-white rounded-full
+        @apply  text-white transition-colors inline-block lg:py-2 lg:px-7 lg:text-[19px] uppercase 
                md:text-[17px] md:px-7 md:py-2
                text-[15px] px-6 py-1.5;
     }
@@ -114,4 +114,32 @@ h1,h2,h4,h5,h6,.navlink,.btn{
 }
  h3{
     font-weight: 700;
+}
+
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+
+.nav-link.active::before {
+  width: 100%;
 }
