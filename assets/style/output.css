@@ -424,9 +424,6 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .text-black {
-    color: var(--color-black);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -608,6 +605,11 @@
       padding-top: calc(var(--spacing) * 30);
     }
   }
+  .lg\:pl-5 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:text-\[26px\] {
     @media (width >= 64rem) {
       font-size: 26px;
@@ -685,14 +687,14 @@
       }
     }
   }
-  .\[\&_h1\]\:text-white {
-    & h1 {
-      color: var(--color-white);
-    }
-  }
   .\[\&_h2\]\:pb-4 {
     & h2 {
       padding-bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .\[\&_h2\]\:text-white {
+    & h2 {
+      color: var(--color-white);
     }
   }
   .lg\:\[\&_h2\]\:text-center {
@@ -779,7 +781,7 @@ body {
       line-height: 37px;
     }
   }
-  h1 {
+  h1 , .big-heading {
     font-size: 38px;
     --tw-leading: 50px;
     line-height: 50px;

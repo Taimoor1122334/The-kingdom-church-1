@@ -11,7 +11,7 @@
       menuIconPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16"); 
     }
   }
-
+  
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.mobile-link').forEach(link => {
       link.addEventListener('click', () => {
